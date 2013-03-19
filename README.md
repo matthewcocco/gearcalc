@@ -4,7 +4,7 @@ gearcalc
 Written as part of a class project.
 
 **Objective: design a two-speed transmission**.
-+ Pick 4 gears from the McMaster-Carr website [link](http://www.mcmaster.com/#standard-gears/)
++ Pick 4 gears from the [McMaster-Carr website](http://www.mcmaster.com/#standard-gears/)
 + Gears should provide transmission ratios of 0.5 and 1.5 between the two axles
 + Centers of axles should be 1" apart
 + Cost <= $15 *(I am not sure this condition is possible)*
@@ -29,7 +29,7 @@ Combination found:
 		Gear 2: "57655K27"
 		Gear 3: "57655K28"
 		Gear 4: "57655K21"
-		
+
 Combination found: 
 	Total cost = $24.84
 		Ratio of 1 to 3 = 0.5625
