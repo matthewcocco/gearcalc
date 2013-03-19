@@ -4,7 +4,8 @@ import ConfigParser
 
 # config values
 
-gearDataFile = "gears.ini"
+gearDataFile = "gears32_15.ini"
+numGears = 15 # this is the number after the underscore ( _ )
 
 ideal_ratio_1_3 = 0.5
 tolerance_1_3   = 0.1
@@ -41,7 +42,7 @@ class Gear:
         self.partNumber         = cfp.get(gearname, 'PartNumber')
         self.price              = float(cfp.get(gearname, 'Price'))
 
-gears = [ Gear(i) for i in range(1,19) ] # make a list, gears, of objects starting at Gear(1) and ending at Gear(18)
+gears = [ Gear(i) for i in range(1,numGears) ] # make a list, gears, of objects starting at Gear(1) and ending at Gear(18)
 
 for gear1 in gears:
     for gear2 in gears:
