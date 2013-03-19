@@ -52,7 +52,8 @@ Combination found:
 values used:
 ------------
 The gears.ini file was built by hand from the values on McMaster-Carr's [Molded Nylon Plain Bore](http://www.mcmaster.com/#standard-gears/=ly6yze) page.
-converted them using [a table I found](http://www.seoconsultants.com/charts/inches-decimal/)
+
+I converted them using [a table I found](http://www.seoconsultants.com/charts/inches-decimal/).
 
     # 12, 0.250, 3/16, 0.29, 5/16, 1/8, 3/32, "57655K11", 6.15
     # 14, 0.292, 1/4,  0.33, 5/16, 1/8, 3/32, "57655K12", 4.38
