@@ -7,7 +7,7 @@ Written as part of a class project.
 + Pick 4 gears from the [McMaster-Carr website](http://www.mcmaster.com/#standard-gears/)
 + Gears should provide transmission ratios of 0.5 and 1.5 between the two axles (+/- 0.1)
 + Centers of axles should be 1" apart
-+ Cost <= $15 *(is this possible?)*
++ Cost <= $25 *(totally possible; up from the initial pricing of $15)*
 
 This is a short script in python to:
 + read data about a gears from an INI file (in this case, part of the Molded Nylon Plain Bore gears.)
@@ -20,7 +20,12 @@ usage
 
 1. clone the repo
 2. edit **gearcalc.py** if you need to change:
+
 	+ the names of the INI files
+	+ ideal values
+	+ tolerances
+	+ price range
+
 3. run gearcalc.py
 
 ---------------------------------------
@@ -41,6 +46,8 @@ and
       ($4.48  +  $3.93)
            Ratio: 1.5
         Distance: 1.0 inch
+
+see also [combinations.md](combinations.md)
 
 ---------------------------------------
 

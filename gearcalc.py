@@ -15,7 +15,7 @@ tolerance_2_4   = 0.1
 min_distance = 1.0 # in inches
 max_distance = 2.0 # also in inches
 
-maxPrice = 18.00
+maxPrice = 25.00
 
 # a few calculations before we begin
 
@@ -117,7 +117,7 @@ def evalmixedgears(gearSets):
                 distance = (gear1.orthogonalDiameter / 2 + gear3.orthogonalDiameter / 2)
                 ratio = (gear1.teeth / gear3.teeth)
 
-                correctDistance = (min_distance <= distance <= max_distance)
+                correctDistance = (min_distance <= distance and distance <= max_distance)
                 correctRatio = (minr_1_3 <= ratio <= maxr_1_3)
 
                 if correctRatio and correctDistance:
@@ -144,7 +144,7 @@ def evalmixedgears(gearSets):
 
                 if (priceOK and sameDistance):
                     # print pair1.description + ", " + pair2.description + " - $" + str(pair1.price + pair2.price)
-                    print "Combination found: $" + str(pair1.price + pair2.price)
+                    print "Combination found: $" + str(pair1.price + pair2.price) + "\n"
                     print "    " + pair1.description
                     print "      ($" + str(pair1.price1) + "  +  $" + str(pair1.price2) + ")"
                     print "    \t   Ratio: " + str(pair1.ratio)
