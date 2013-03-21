@@ -4,7 +4,7 @@ import ConfigParser
 
 # config values
 
-gearsAvailable = ["gears48_18.ini", "gears32_15.ini", "gears_24_4.ini"]
+gearsAvailable = ["gears48_18.ini", "gears32_15.ini", "gears24_4.ini"]
 
 ideal_ratio_1_3 = 0.5
 tolerance_1_3   = 0.1
