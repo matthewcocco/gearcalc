@@ -4,6 +4,8 @@ import ConfigParser
 
 # config values
 
+gearsAvailable = ["gears48_18.ini", "gears32_15.ini", "gears_24_4.ini"]
+
 ideal_ratio_1_3 = 0.5
 tolerance_1_3   = 0.1
 
@@ -43,6 +45,8 @@ class Pair:
         self.ratio = (gear1.teeth / gear2.teeth)
         self.distance = (gear1.orthogonalDiameter / 2 + gear2.orthogonalDiameter / 2)
         self.price = (gear1.price + gear2.price)
+        self.price1 = gear1.price
+        self.price2 = gear2.price
 
         self.description = gear1.partNumber + " and " + gear2.partNumber
 
@@ -139,7 +143,17 @@ def evalmixedgears(gearSets):
                 sameDistance = pair1.distance == pair2.distance
 
                 if (priceOK and sameDistance):
-                    print pair1.description + ", " + pair2.description + " - $" + str(pair1.price + pair2.price)
+                    # print pair1.description + ", " + pair2.description + " - $" + str(pair1.price + pair2.price)
+                    print "Combination found: $" + str(pair1.price + pair2.price)
+                    print "    " + pair1.description
+                    print "      ($" + str(pair1.price1) + "  +  $" + str(pair1.price2) + ")"
+                    print "    \t   Ratio: " + str(pair1.ratio)
+                    print "    \tDistance: " + str(pair1.distance)
+                    print "    " + pair2.description
+                    print "      ($" + str(pair2.price1) + "  +  $" + str(pair2.price2) + ")"
+                    print "    \t   Ratio: " + str(pair2.ratio)
+                    print "    \tDistance: " + str(pair2.distance)
+                    print "-------------------------"
 
     # find pairs of pairs which are equal in axle-distance
 
@@ -147,7 +161,5 @@ def evalmixedgears(gearSets):
 
 # evalgears("gears48_18.ini",18)
 # evalgears("gears32_15.ini",15)
-
-gearsAvailable = ["gears48_18.ini", "gears32_15.ini", "gears_24_4.ini"]
 
 evalmixedgears(gearsAvailable)
