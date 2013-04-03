@@ -1,4 +1,4 @@
-Combination found: $24.84
+1: Combination found: $24.84
 
     57655K19 and 57655K27
       ($5.0  +  $7.05)
@@ -11,7 +11,7 @@ Combination found: $24.84
 
 -------------------------
 
-Combination found: $22.53
+2: Combination found: $22.53
 
     57655K35 and 57655K46
       ($4.23  +  $5.76)
@@ -24,7 +24,7 @@ Combination found: $22.53
 
 -------------------------
 
-Combination found: $17.81
+3: Combination found: $17.81
 
     57655K36 and 57655K45
       ($4.03  +  $5.37)
@@ -37,7 +37,7 @@ Combination found: $17.81
 
 -------------------------
 
-Combination found: $19.88
+4: Combination found: $19.88
 
     57655K36 and 57655K47
       ($4.03  +  $6.13)
@@ -50,7 +50,7 @@ Combination found: $19.88
 
 -------------------------
 
-Combination found: $19.41
+5: Combination found: $19.41
 
     57655K38 and 57655K46
       ($3.93  +  $5.76)
