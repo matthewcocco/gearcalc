@@ -18,15 +18,15 @@ This is a short script in python to:
 usage
 -----
 
-1. clone the repo
-2. edit **gearcalc.py** if you need to change:
++ clone the repo
++ edit **gearcalc.py** if you need to change:
 
 	+ the names of the INI files
 	+ ideal values
 	+ tolerances
 	+ price range
 
-3. run gearcalc.py
++ run gearcalc.py
 
 ---------------------------------------
 
@@ -55,4 +55,4 @@ values used:
 ------------
 The gears*.ini files were built by hand from the values on McMaster-Carr's [Molded Nylon Plain Bore](http://www.mcmaster.com/#standard-gears/=ly7dov) page.
 
-I converted them using [a table I found](http://www.seoconsultants.com/charts/inches-decimal/).
+I converted the fractional values to decimal values using [a table I found](http://www.seoconsultants.com/charts/inches-decimal/).
